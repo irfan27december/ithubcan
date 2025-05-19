@@ -1,0 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header, nav, footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.breadcrumb {
+  background: #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  padding: 10px 20px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.read-more:hover {
+  background-color: #005599;
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+.services-list li {
+  margin: 10px 0;
+}
+.services-list a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+.services-list a i {
+  margin-right: 8px;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer i {
+  margin-right: 6px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - IT Hub Canberra</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-...your-integrity..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <h1>IT Hub Canberra</h1>
+    <p>Effective Business Performance. Your Trusted Partner in IT Services.</p>
+  </header>
+
+  <nav>
+    <a href="index.html"><i class="fas fa-home"></i> HOME</a>
+    <a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a>
+    <a href="trading.html"><i class="fas fa-briefcase"></i> TRADING NAME</a>
+    <a href="services.html"><i class="fas fa-server"></i> SERVICES</a>
+    <a href="calibration.html"><i class="fas fa-tools"></i> CALIBRATION</a>
+    <a href="education.html"><i class="fas fa-graduation-cap"></i> EDUCATION</a>
+    <a href="clients.html"><i class="fas fa-users"></i> CLIENTS</a>
+    <a href="contacts.html"><i class="fas fa-envelope"></i> CONTACTS</a>
+  </nav>
+
+  <div id="breadcrumb" class="breadcrumb"></div>
+
+  <main>
+    <h2>About</h2>
+    <p>Content for About page will go here.</p>
+  </main>
+
+  <!-- Footer will be dynamically loaded -->
+  <div id="footer"></div>
+
+  <script>
+    fetch('footer.html')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => {
+        console.error("Error loading footer:", error);
+      });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
