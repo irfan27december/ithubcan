@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacts - IT Hub Canberra</title>
   <!-- To display icons -->
   <!--  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script> 
@@ -27,19 +29,146 @@
   <!-- <div class="breadcrumb">Home > Contacts</div>  -->
 <div id="breadcrumb" class="breadcrumb"></div>
 
+<!--
   <main>
     <h2>Contacts</h2>
-    <!-- <p>Content for Contacts page will go here.</p> -->
+    <!-- <p>Content for Contacts page will go here.</p> 
 	<p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> NSW: Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000</p>
     <p><i class="fas fa-phone" style='font-size:20px;color:blue'></i> NSW: (061) 0292 480 113</p>
     <p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> WA: AMP Tower Level 28, 140 St George's Terrace, Perth WA 6000</p>
     <p><i class="fas fa-phone" style='font-size:20px;color:blue'></i> WA: (061) 0892 881 877</p>
     <p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> ACT: 113/90 Swain Street, Gungahlin ACT 2912</p>
     <p><i class="fas fa-phone" style='font-size:20px;color:blue'></i> ACT: (061) 0292 480 113</p>
-    <p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> SA: Westpac House Level 24, King William Street Adelaide SA 5000</p>
+    <p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> ACT: Westpac House Level 24, King William Street Adelaide SA 5000</p>
     <p><i class="fas fa-clock" style='font-size:20px;color:green'></i> We are open: Mon – Fri: 9.00 am – 4.30 pm</p>
-  </main>
+  </main> 
+  -->
+  
+  <!--
+  <main>
+  <h2>Contacts</h2>
 
+  <section>
+    <h3>NSW</h3>
+    <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000</p>
+    <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0292 480 113</p>
+  </section>
+
+  <section>
+    <h3>WA</h3>
+    <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> AMP Tower Level 28, 140 St George's Terrace, Perth WA 6000</p>
+    <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0892 881 877</p>
+  </section>
+
+  <section>
+    <h3>ACT</h3>
+    <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> 113/90 Swain Street, Gungahlin ACT 2912</p>
+    <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0292 480 113</p>
+  </section>
+
+  <section>
+    <h3>Opening Hours</h3>
+    <p><i class="fas fa-clock" style="font-size:20px;color:green"></i> We are open: Mon – Fri: 9.00 am – 4.30 pm</p>
+  </section>
+</main>
+-->
+
+
+<main>
+  <h2>Contacts</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+    <!-- NSW Contact Block -->
+    <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
+      <h3>NSW</h3>
+      <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000</p>
+      <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0292 480 113</p>
+    </div>
+
+    <!-- WA Contact Block -->
+    <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
+      <h3>WA</h3>
+      <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> AMP Tower Level 28, 140 St George's Terrace, Perth WA 6000</p>
+      <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0892 881 877</p>
+    </div>
+
+    <!-- ACT Contact Block -->
+    <div style="flex: 1 1 300px; border: 1px solid #ccc; padding: 15px; border-radius: 8px;">
+      <h3>ACT</h3>
+      <p><i class="fas fa-map-marker-alt" style="font-size:20px;color:red"></i> 113/90 Swain Street, Gungahlin ACT 2912</p>
+      <p><i class="fas fa-phone" style="font-size:20px;color:blue"></i> (061) 0292 480 113</p>
+    </div>
+
+  </div>
+
+  <!-- Opening Hours Block -->
+  <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
+    <h3>Opening Hours</h3>
+    <p><i class="fas fa-clock" style="font-size:20px;color:green"></i> Mon – Fri: 9.00 am – 4.30 pm</p>
+  </div>
+</main>
+
+
+ <!-- Contact Form -->
+<!--
+    <div class="form-block">
+      <h3>Get in Touch</h3>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+	
+<!-- Contact Form Section (Separate Card) -->
+  <!--<section class="contact-card-section">
+    <div class="contact-card">
+      <h2>Send Us a Message</h2>
+      <form action="sendmail.php" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
 <!-- 
   <footer>
     <p><i class="fas fa-map-marker-alt" style='font-size:20px;color:red'></i> Address: Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000, Australia. 

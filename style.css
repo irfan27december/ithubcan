@@ -1,9 +1,20 @@
-
+/* Apply a consistent background to the entire page */
 body {
   font-family: Arial, sans-serif;
+  color: #333; /* Optional: set a consistent text color */
   margin: 0;
   padding: 0;
   background: #f4f4f4;
+  /*You can replace #f4f4f4 with any color, gradient, or image:
+  /* Example gradient 
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  */
+  /* Example image */
+  /*
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  */
 }
 header, nav, footer {
   background-color: #003366;
@@ -78,6 +89,233 @@ main {
 .services-list a i {
   margin-right: 8px;
 }
+
+/* Font color for h3 tag in trading html */
+.blue-text {
+  color: #007bff; /* Bright blue */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gradient-text {
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.styled-heading {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #005792;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.card li i {
+  color: #0073e6;
+  margin-right: 8px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*Network services html page */
+
+.network-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 20px;
+}
+
+.network-image {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.service-list li i {
+  margin-right: 10px;
+  color: #005792;
+}
+
+
+/* Contact Info Section */
+/*
+.contact-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.contact-block {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hours-block {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+
+/* Contact Form Section */
+.contact-card-section {
+  background-color: #f0f0f0;
+  padding: 50px 20px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+*/
+
 footer a {
   color: white;
   text-decoration: underline;
