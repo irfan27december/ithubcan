@@ -9,9 +9,10 @@
 </head>
 <body>
   <header>
-    <h1>IT Hub Canberra</h1>
+    <h1><i class="fas fa-chalkboard-teacher"></i> IT Hub Canberra</h1>
     <p>Effective Business Performance. Your Trusted Partner in IT Services.</p>
   </header>
+
   <nav>
     <a href="index.html"><i class="fas fa-home"></i> HOME</a>
     <a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a>
@@ -22,24 +23,40 @@
     <a href="clients.html"><i class="fas fa-users"></i> CLIENTS</a>
     <a href="contacts.html"><i class="fas fa-envelope"></i> CONTACTS</a>
   </nav>
-  <!-- <div class="breadcrumb">Home > Training</div> -->
+
   <div id="breadcrumb" class="breadcrumb"></div>
+
   <main>
-    <h2>Training</h2>
-    <p>Content for Training page will go here.</p>
+    <h2><i class="fas fa-chalkboard-teacher"></i> Training</h2>
+	<h3><p>We offer Microsoft and Cisco certifications with hands-on lab training. Our programs support the local community with job-oriented training and job placement support.</p></h3>
+    
+    <div class="training-content">
+      <img src="images/Services-Training-1024x213.jpg" alt="Training Program" class="training-image">
+
+      <h3>Microsoft Courses:</h3>
+		<ul class="training-list">
+		  <li><i class="fab fa-windows"></i> Windows Server</li>
+		  <li><i class="fas fa-exchange-alt"></i> Exchange Server</li>
+		  <li><i class="fas fa-comments"></i> Skype for Business</li>
+		  <li><i class="fas fa-share-alt"></i> SharePoint</li>
+		  <li><i class="fas fa-server"></i> Virtualization</li>
+		  <li><i class="fas fa-cogs"></i> System Center</li>
+		  <li><i class="fas fa-cloud"></i> Cloud</li>
+		  <li><i class="fab fa-windows"></i> Windows</li>
+		  <li><i class="fas fa-envelope-open-text"></i> Office 365</li>
+		  <li><i class="fas fa-database"></i> SQL Server</li>
+		</ul>
+
+		<h3>Cisco Courses:</h3>
+			<ul class="training-list">
+		  <li><i class="fas fa-network-wired"></i> CCNA - Routing and Switching, Security, Wireless</li>
+		  <li><i class="fas fa-project-diagram"></i> CCNP - Routing and Switching, Security, Wireless</li>
+		  <li><i class="fas fa-drafting-compass"></i> CCDA / CCDP</li>
+		</ul>
+
+    </div>
   </main>
-  
-  <!--
-  <footer>
-    <p><i class="fas fa-map-marker-alt"></i> Address: Level 10-11, No. 66, Clarence Street, Sydney, NSW 2000, Australia. 
-       <a href="https://maps.google.com/?q=Level+10-11,+No.+66,+Clarence+Street,+Sydney,+NSW+2000" target="_blank">View on Map</a></p>
-    <p><i class="fas fa-phone"></i> Phones: (061) 0292480113</p>
-    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@cislab.com.au">info@cislab.com.au</a></p>
-    <p>&copy; 2025 IT Hub Canberra. All rights reserved.</p>
-  </footer>
-  -->
-  
-  <!-- Load the footer -->
+
   <div id="footer"></div>
 
   <script>
@@ -57,7 +74,5 @@
         console.error("Error loading footer:", error);
       });
   </script>
-  
-  <script src="script.js"></script>
 </body>
 </html>

@@ -15,6 +15,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat; 
   */
+  /*height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 header, nav, footer {
   background-color: #003366;
@@ -204,6 +208,191 @@ main {
 .service-list li i {
   margin-right: 10px;
   color: #005792;
+}
+
+
+/* System Solutions html page */
+
+.system-solutions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 20px;
+}
+
+.system-image {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.solution-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.solution-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.solution-list li i {
+  margin-right: 10px;
+  color: #005792;
+}
+
+/*Training page */
+
+.training-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  text-align: left;
+}
+
+.training-image {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.training-list {
+  list-style-type: square;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.training-list li i {
+  margin-right: 8px;
+  color: #2b6cb0; /* Optional: blue color for icons */
+}
+
+/*Design and consultancy pahe html */
+.consultancy-training-list li {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+.consultancy-training-list li i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+/*Online training html page */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+
+/*Business Solution html page  */
+
+.bs-training-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bs-training-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.bs-training-list i {
+  margin-right: 10px;
+  color: #007BFF;
+}
+
+
+.it-audit-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.it-audit-icons li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.it-audit-icons i {
+  margin-right: 10px;
+  color: #0073e6;
+}
+
+/* Slider container */
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  height: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+
+  /* Flexbox center content inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.slide i {
+  font-size: 80px;
+  color: #0078D7;
+  margin-bottom: 20px;
+}
+
+.slide h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #0078D7;
 }
 
 

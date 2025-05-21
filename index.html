@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome CDN for sliders -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -54,6 +56,82 @@
       </ul>
     </section>
   </main>
+  
+  <div class="slider-container">
+  <!-- Slide 1 -->
+  <div class="slide">
+    <i class="fas fa-network-wired"></i>
+    <h2>Network Services</h2>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <i class="fas fa-cogs"></i>
+    <h2>System Solutions</h2>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+    <i class="fas fa-envelope"></i>
+    <h2>Microsoft Exchange</h2>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide">
+    <i class="fas fa-server"></i>
+    <h2>CISCO / JUNIPER Networks</h2>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide">
+    <i class="fas fa-certificate"></i>
+    <h2>Vendor Certificates - CISCO, VMware, Linux</h2>
+  </div>
+
+  <!-- Slide 6 -->
+  <div class="slide">
+    <i class="fab fa-skype"></i>
+    <h2>Skype for Business Offer</h2>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+    <span class="dot" onclick="showSlide(3)"></span>
+    <span class="dot" onclick="showSlide(4)"></span>
+    <span class="dot" onclick="showSlide(5)"></span>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+  const dots = document.getElementsByClassName("dot");
+
+  function showSlide(n) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+    slides[n].style.display = "flex";
+    dots[n].classList.add("active");
+    slideIndex = n;
+  }
+
+  function autoSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+    setTimeout(autoSlide, 5000);
+  }
+
+  showSlide(slideIndex);
+  setTimeout(autoSlide, 5000);
+</script>
+  
   
   <!-- 
   <footer>
