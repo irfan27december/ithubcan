@@ -20,12 +20,16 @@ body {
   justify-content: center;
   align-items: center; */
 }
+
+/*Header and footer background and content color related CSS*/
 header, nav, footer {
   background-color: #003366;
   color: white;
   padding: 10px;
   text-align: center;
 }
+
+/*Menu navigation related CSS*/
 nav a {
   color: white;
   margin: 0 10px;
@@ -39,7 +43,7 @@ nav a.active {
   text-decoration: underline;
 }
 
-
+/* Breadcrumb related CSS*/
 .breadcrumb {
   background: #ddd;
   padding: 10px;
@@ -47,6 +51,7 @@ nav a.active {
 }
 .breadcrumb {
   font-size: 14px;
+  font-weight: bold;
   color: #555;
   padding: 10px 20px;
 }
@@ -54,19 +59,22 @@ nav a.active {
 .breadcrumb a {
   text-decoration: none;
   color: #007bff;
+  /* color: red;  */
 }
 
 .breadcrumb a:hover {
   text-decoration: underline;
 }
 
-
+/*Main html pages related CSS*/
 main {
   max-width: 1200px;
   margin: auto;
   background: white;
   padding: 20px;
 }
+
+/*Read more related CSS */
 .read-more {
   display: inline-block;
   padding: 10px 20px;
@@ -78,6 +86,8 @@ main {
 .read-more:hover {
   background-color: #005599;
 }
+
+/*Services list page related CSS*/
 .services-list {
   list-style: none;
   padding: 0;
@@ -143,8 +153,9 @@ main {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
+ /* Trading card title related CSS */	
 .card h3 {
+  /* Trading card title related CSS */	
   color: #005792;
   margin-bottom: 10px;
   font-size: 18px;
@@ -154,7 +165,7 @@ main {
   list-style-type: none;
   margin-bottom: 10px;
 }
-
+ /* Trading card icon related CSS */	
 .card li i {
   color: #0073e6;
   margin-right: 8px;
@@ -178,19 +189,20 @@ main {
 .network-services {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  align-items: left;
   justify-content: center;
   margin: 30px 20px;
 }
-
+/*
 .network-image {
   max-width: 100%;
   width: 400px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+}*/
 
 .service-list {
   flex: 1;
@@ -214,14 +226,21 @@ main {
 /* System Solutions html page */
 
 .system-solutions {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin: 30px 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0px;
+  align-items: left;
+  justify-content: center;
   margin: 30px 20px;
 }
-
+/*
 .system-image {
   max-width: 100%;
   width: 400px;
@@ -229,6 +248,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+*/
 
 .solution-list {
   flex: 1;
@@ -251,56 +271,118 @@ main {
 /*Training page */
 
 .training-content {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 25px;
   padding: 20px;
-  text-align: left;
+  text-align: left;*/
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0px;
+  align-items: left;
+  justify-content:center;
+  margin: 30px 20px;
 }
-
+/*
 .training-image {
   max-width: 100%;
-  width: 500px;
+  width: 400px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
+*/
 .training-list {
-  list-style-type: square;
+  /*list-style-type: square; 
   padding-left: 20px;
-  line-height: 1.6;
+  line-height: 1.6; */
+  flex: 1;
+  list-style: none;
+  padding: 0;
 }
+
+.training-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
 
 .training-list li i {
-  margin-right: 8px;
+  /*margin-right: 8px;
   color: #2b6cb0; /* Optional: blue color for icons */
+  margin-right: 10px;
+  color: #005792;
 }
 
+
+
 /*Design and consultancy page html */
+
+.consultancy-training-list {
+  /*list-style-type: square; 
+  padding-left: 20px;
+  line-height: 1.6; */
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+
 .consultancy-training-list li {
-  margin: 8px 0;
   font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 .consultancy-training-list li i {
-  margin-right: 10px;
-  color: #007BFF;
+  /*margin-right: 10px;
+  color: #007BFF; */
+   margin-right: 10px;
+  color: #005792;
 }
 
 /*Online training html page */
-
+/*
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
 }
+*/
 
+.online-training-list {
+  /*list-style-type: square; 
+  padding-left: 20px;
+  line-height: 1.6; */
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+
+.online-training-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.online-training-list li i {
+  /*margin-right: 10px;
+  color: #007BFF; */
+   margin-right: 10px;
+  color: #005792;
+}
 
 /*Business Solution html page  */
-
+/*
 .bs-training-list {
   list-style: none;
   padding-left: 0;
@@ -315,26 +397,85 @@ img {
   margin-right: 10px;
   color: #007BFF;
 }
-
-
-.it-audit-icons {
+*/
+.bs-training-list {
+  /*list-style-type: square; 
+  padding-left: 20px;
+  line-height: 1.6; */
+  flex: 1;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-.it-audit-icons li {
-  margin-bottom: 8px;
-  font-size: 18px;
+
+.bs-training-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
-.it-audit-icons i {
+.bs-training-list li i {
+  /*margin-right: 10px;
+  color: #007BFF; */
+   margin-right: 10px;
+  color: #005792;
+}
+
+
+
+/*Education page html */
+
+.education-list {
+  /*list-style-type: square; 
+  padding-left: 20px;
+  line-height: 1.6; */
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+
+.education-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.education-list li i {
+  /*margin-right: 10px;
+  color: #007BFF; */
+   margin-right: 10px;
+  color: #005792;
+}
+
+
+
+/* IT Audit related CSS */
+
+.it-audit-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.it-audit-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.it-audit-list i {
   margin-right: 10px;
-  color: #0073e6;
+  color: #005792;
 }
 
 
 /* Calibration Section */
 /* Calibration Section Styling */
+/*
 .calibration-section {
   padding: 30px;
   background: #f9f9f9;
@@ -355,13 +496,14 @@ img {
   color: #444;
   margin-bottom: 20px;
   line-height: 1.6;
-}
+} 
+
 
 .calibration-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 
 .calibration-figure {
   text-align: center;
@@ -378,6 +520,7 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+*/
 
 .calibration-image:hover {
   transform: scale(1.05);
@@ -390,22 +533,58 @@ figcaption {
   margin-top: 10px;
 }
 
+/*
 .calibration-content ul {
   list-style-type: none;
   padding-left: 0;
   text-align: left;
 }
+*/
+
+.calibration-content {
+  /*list-style-type: square; 
+  padding-left: 20px;
+  line-height: 1.6; */
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
 
 .calibration-content li {
-  font-size: 16px;
+  /*font-size: 16px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 10px;*/
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
 }
 
 .calibration-content li i {
-  color: #0078D7;
-  margin-right: 8px;
+  /*color: #0078D7;
+  margin-right: 8px; */
+  margin-right: 10px;
+  color: #005792;
 }
+
+
+
+
+
+.education-list li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.education-list li i {
+  /*margin-right: 10px;
+  color: #007BFF; */
+   margin-right: 10px;
+  color: #005792;
+}
+
 
 /*Clients html page */
  .clients-section {
@@ -510,6 +689,26 @@ figcaption {
   background-color: #0078D7;
 }
 
+/* Our Services */
+.section-heading {
+  font-size: 28px;
+  color: #333;
+  margin: 40px 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-heading i {
+  font-size: 28px;
+  color: #0078D7;
+}
+
+/* Add this CSS to ensure alignment and consistent spacing */
+h2 i, h3 i {
+  margin-right: 8px;
+  color: #0078D7; /* IT blue tone */
+}
 
 
 /* Contact Info Section */
@@ -621,10 +820,13 @@ figcaption {
 }
 */
 
+
+/* Footer CSS not in use */
+/* Footer text color */
 footer a {
   color: white;
   text-decoration: underline;
 }
 footer i {
   margin-right: 6px;
-}
+} 
