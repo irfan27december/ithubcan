@@ -56,55 +56,52 @@
       </ul>
     </section>
   </main>
-  
+ 
+
+<!-- /* Slider section */ --> 
+<section class="slider-wrapper">
   <div class="slider-container">
-  <!-- Slide 1 -->
-  <div class="slide">
-    <i class="fas fa-network-wired"></i>
-    <h2>Network Services</h2>
-  </div>
+    <!-- Slide 1 -->
+    <div class="slide">
+      <i class="fas fa-network-wired"></i>
+      <h2>Network Services</h2>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+      <i class="fas fa-server"></i>
+      <h2>System Solutions</h2>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide">
+      <i class="fas fa-envelope"></i>
+      <h2>Microsoft Exchange</h2>
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide">
+      <i class="fas fa-database"></i>
+      <h2>CISCO / JUNIPER Networks</h2>
+    </div>
+    <!-- Slide 5 -->
+    <div class="slide">
+      <i class="fas fa-certificate"></i>
+      <h2>Vendor Certificates</h2>
+    </div>
+    <!-- Slide 6 -->
+    <div class="slide">
+      <i class="fas fa-comments"></i>
+      <h2>Skype for Business Offer</h2>
+    </div>
 
-  <!-- Slide 2 -->
-  <div class="slide">
-    <i class="fas fa-cogs"></i>
-    <h2>System Solutions</h2>
-  </div>
-
-  <!-- Slide 3 -->
-  <div class="slide">
-    <i class="fas fa-envelope"></i>
-    <h2>Microsoft Exchange</h2>
-  </div>
-
-  <!-- Slide 4 -->
-  <div class="slide">
-    <i class="fas fa-server"></i>
-    <h2>CISCO / JUNIPER Networks</h2>
-  </div>
-
-  <!-- Slide 5 -->
-  <div class="slide">
-    <i class="fas fa-certificate"></i>
-    <h2>Vendor Certificates - CISCO, VMware, Linux</h2>
-  </div>
-
-  <!-- Slide 6 -->
-  <div class="slide">
-    <i class="fab fa-skype"></i>
-    <h2>Skype for Business Offer</h2>
-  </div>
-
-  <!-- Dots -->
-  <div class="dots">
-    <span class="dot" onclick="showSlide(0)"></span>
-    <span class="dot" onclick="showSlide(1)"></span>
-    <span class="dot" onclick="showSlide(2)"></span>
-    <span class="dot" onclick="showSlide(3)"></span>
-    <span class="dot" onclick="showSlide(4)"></span>
-    <span class="dot" onclick="showSlide(5)"></span>
-  </div>
-</div>
-
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+      <span class="dot" onclick="showSlide(3)"></span>
+      <span class="dot" onclick="showSlide(4)"></span>
+      <span class="dot" onclick="showSlide(5)"></span>
+    </div>
+	
 <script>
   let slideIndex = 0;
   const slides = document.getElementsByClassName("slide");
@@ -131,7 +128,9 @@
   showSlide(slideIndex);
   setTimeout(autoSlide, 5000);
 </script>
-  
+	
+  </div>
+</section>  
   
   <!-- 
   <footer>

@@ -278,7 +278,7 @@ main {
   color: #2b6cb0; /* Optional: blue color for icons */
 }
 
-/*Design and consultancy pahe html */
+/*Design and consultancy page html */
 .consultancy-training-list li {
   margin: 8px 0;
   font-size: 1.1em;
@@ -332,19 +332,138 @@ img {
   color: #0073e6;
 }
 
+
+/* Calibration Section */
+/* Calibration Section Styling */
+.calibration-section {
+  padding: 30px;
+  background: #f9f9f9;
+  text-align: left;
+}
+
+.calibration-header h2 {
+  font-size: 28px;
+  color: #0078D7;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calibration-header p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.calibration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calibration-figure {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.calibration-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calibration-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+}
+
+.calibration-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.calibration-content li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.calibration-content li i {
+  color: #0078D7;
+  margin-right: 8px;
+}
+
+/*Clients html page */
+ .clients-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.client-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+}
+
+.client-card i {
+  font-size: 40px;
+  color: #0078D7;
+  margin-bottom: 15px;
+}
+
+.client-card h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.client-card p {
+  font-size: 14px;
+  color: #555;
+}
+
 /* Slider container */
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
 
 .slider-container {
   position: relative;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1250px;
   height: 400px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   overflow: hidden;
-
-  /* Flexbox center content inside */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -354,12 +473,8 @@ img {
 .slide {
   display: none;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
 }
 
 .slide i {
@@ -394,6 +509,7 @@ img {
 .dot:hover {
   background-color: #0078D7;
 }
+
 
 
 /* Contact Info Section */
